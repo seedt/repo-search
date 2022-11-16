@@ -29,7 +29,7 @@ npm install
 REACT_APP_GITHUB_TOKEN=YOUR-GITHUB-TOKEN npm run start
 ```
 
-Navigate to [localhost:300](http://localhost:3000)
+Navigate to [localhost:3000](http://localhost:3000)
 
 ## Tests
 
