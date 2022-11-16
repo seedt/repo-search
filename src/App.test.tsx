@@ -2,8 +2,15 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('<App />', () => {
+  test.skip('should render an error if missing github token env', () => {
+    render(<App />);
+
+    expect(screen.getByTestId('error-message')).toBeInTheDocument();
+  });
+
+  test('should render the Main component', () => {
+    render(<App githubToken="abcd" />);
+    expect(screen.getByTestId('main')).toBeInTheDocument();
+  });
 });
