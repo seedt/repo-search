@@ -12,7 +12,6 @@ import ErrorDisplay from './components/ErrorDisplay';
 
 import { GITHUB_API } from './constants';
 import 'antd/dist/antd.css';
-import './index.css';
 
 const AUTH_HEADER = 'Bearer';
 
